@@ -12,15 +12,9 @@ public class MoveController : MonoBehaviour
     private Queue<Vector2> _points; 
    
 
-    
-
-    
-
-
-
     void Start()
     {
-        ChangeSpeed(1f);
+        ChangeSpeed(10f);
         startMarker = transform.position;
         endMarker = transform.position;
         _points = new Queue<Vector2>();
@@ -52,4 +46,5 @@ public class MoveController : MonoBehaviour
         _speedLabel.text = new_speed.ToString();
     }
 
+   
 }
