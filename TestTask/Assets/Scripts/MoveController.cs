@@ -15,6 +15,7 @@ public class MoveController : MonoBehaviour
     void Start()
     {
         ChangeSpeed(10f);
+        Application.targetFrameRate = 120;
         startMarker = transform.position;
         endMarker = transform.position;
         _points = new Queue<Vector2>();
