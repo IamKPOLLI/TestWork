@@ -25,10 +25,7 @@ public class MoveController : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetMouseButtonDown(0))
-        {
-           _points.Enqueue(_camera.ScreenToWorldPoint(Input.mousePosition));
-        }
+        
 
 
 
@@ -47,5 +44,10 @@ public class MoveController : MonoBehaviour
         _speedLabel.text = new_speed.ToString();
     }
 
+
+    public void AddPoint()
+    {
+        _points.Enqueue(_camera.ScreenToWorldPoint(Input.mousePosition));
+    }
    
 }
